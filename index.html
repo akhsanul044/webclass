@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TKJ Class Album - 36 Network Nodes</title>
+    <title>CLASS_ALBUM.NET - 11 TKJ 2</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,17 +21,100 @@
     </header>
 
     <main class="container">
-        <!-- Input Pencarian -->
         <div class="controls">
-            <input type="text" id="searchInput" placeholder="Search node by name, IP, or role..." onkeyup="filterNodes()">
+            <input type="text" id="searchInput" placeholder="Search node by name, IP, or role... (type 'struktur' for class info)" onkeyup="filterNodes()">
         </div>
 
-        <!-- Container Grid 36 Murid (Di-render via JS) -->
         <div class="node-grid" id="nodeGrid"></div>
+
+        <div id="structureSection" class="structure-section" style="display: none;">
+            <h2 class="section-title">[ STRUKTUR ORGANISASI 11 TKJ 2 ]</h2>
+            
+            <div class="structure-grid">
+                <div class="struct-card main-lead">
+                    <span class="struct-role">WALI KELAS</span>
+                    <div class="avatar-frame">
+                        <img src="" onerror="this.onerror=null; this.src=fallbackImage;" alt="Wali Kelas">
+                    </div>
+                    <h3>nama</h3>
+                    <p class="struct-ig">name ig</p>
+                </div>
+
+                <div class="struct-row">
+                    <div class="struct-card">
+                        <span class="struct-role">KETUA KELAS</span>
+                        <div class="avatar-frame">
+                            <img src="" onerror="this.onerror=null; this.src=fallbackImage;" alt="Ketua Kelas">
+                        </div>
+                        <h3>nama</h3>
+                        <p class="struct-ig">name ig</p>
+                    </div>
+                    <div class="struct-card">
+                        <span class="struct-role">WAKIL KETUA</span>
+                        <div class="avatar-frame">
+                            <img src="" onerror="this.onerror=null; this.src=fallbackImage;" alt="Wakil Kelas">
+                        </div>
+                        <h3>nama</h3>
+                        <p class="struct-ig">name ig</p>
+                    </div>
+                </div>
+
+                <div class="struct-row">
+                    <div class="struct-card">
+                        <span class="struct-role">SEKRETARIS 1</span>
+                        <div class="avatar-frame">
+                            <img src="" onerror="this.onerror=null; this.src=fallbackImage;" alt="Sekretaris 1">
+                        </div>
+                        <h3>nama</h3>
+                        <p class="struct-ig">name ig</p>
+                    </div>
+                    <div class="struct-card">
+                        <span class="struct-role">SEKRETARIS 2</span>
+                        <div class="avatar-frame">
+                            <img src="" onerror="this.onerror=null; this.src=fallbackImage;" alt="Sekretaris 2">
+                        </div>
+                        <h3>nama</h3>
+                        <p class="struct-ig">name ig</p>
+                    </div>
+                </div>
+
+                <div class="struct-row">
+                    <div class="struct-card">
+                        <span class="struct-role">BENDAHARA 1</span>
+                        <div class="avatar-frame">
+                            <img src="" onerror="this.onerror=null; this.src=fallbackImage;" alt="Bendahara 1">
+                        </div>
+                        <h3>nama</h3>
+                        <p class="struct-ig">name ig</p>
+                    </div>
+                    <div class="struct-card">
+                        <span class="struct-role">BENDAHARA 2</span>
+                        <div class="avatar-frame">
+                            <img src="" onerror="this.onerror=null; this.src=fallbackImage;" alt="Bendahara 2">
+                        </div>
+                        <h3>nama</h3>
+                        <p class="struct-ig">name ig</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rules-box">
+                <h2>KESEPAKATAN KELAS 11 TKJ 2</h2>
+                <ol>
+                    <li>Piket pagi jadwal hari itu, piket sore jadwal hari selanjutnya.</li>
+                    <li>Surat berlaku apabila ada ttd wali dan stempel RT (tidak lengkap : alpa).</li>
+                    <li>Piket MBG harus sesuai dengan jadwal piket.</li>
+                    <li>Setiap hari senin wajib membayar kas 2k.</li>
+                    <li>Jika tidak piket akan di denda 3k.</li>
+                    <li>Menjaga fasilitas kelas.</li>
+                    <li>Saling membantu satu sama lain.</li>
+                </ol>
+            </div>
+        </div>
     </main>
 
     <footer>
-        <p>&copy; 2026 Computer & Network Engineering Class. All 36 Connections Maintained.</p>
+        <p>&copy; 2026 Computer & Network Engineering Class. All Connections Maintained.</p>
     </footer>
 
     <script src="script.js"></script>
