@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TKJ Class Album - 36 Network Nodes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="terminal-bar">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="title">root@tkj-server:~# ./show_class_album.sh --all-nodes</span>
+        </div>
+        <div class="hero">
+            <h1>CLASS_ALBUM.NET [11 TKJ 2]</h1>
+            <p class="status"><span class="pulse"></span> 36 Nodes Connected | Status: 200 OK</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Input Pencarian -->
+        <div class="controls">
+            <input type="text" id="searchInput" placeholder="Search node by name, IP, or role..." onkeyup="filterNodes()">
+        </div>
+
+        <!-- Container Grid 36 Murid (Di-render via JS) -->
+        <div class="node-grid" id="nodeGrid"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Computer & Network Engineering Class. All 36 Connections Maintained.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
