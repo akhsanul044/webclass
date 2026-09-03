@@ -1,7 +1,7 @@
 // Gambar cadangan jika link foto belum diisi atau gagal dimuat
 const fallbackImage = "https://via.placeholder.com/150/161b22/58a6ff?text=NODE_PHOTO";
 
-// Array Data 36 Murid
+// Array Data 36 Murid (Sudah disesuaikan dengan daftar nama terbaru)
 const students = [
     { id: 1, name: "JASTINE FILIPUS WIBAWANTO", role: "role", quote: "motivasi", ig: "name ig", img: "https://i.ibb.co/sample1/foto1.jpg" },
     { id: 2, name: "JENIVER FANIA VIVI ERWINDA", role: "role", quote: "motivasi", ig: "name ig", img: "" },
@@ -21,14 +21,14 @@ const students = [
     { id: 16, name: "RAFILIO HERMAWAN", role: "role", quote: "motivasi", ig: "name ig", img: "" },
     { id: 17, name: "RAHMATTULLAH ROSYID SUDARSONO", role: "role", quote: "motivasi", ig: "name ig", img: "" },
     { id: 18, name: "RAMA NOFIANTO", role: "role", quote: "motivasi", ig: "name ig", img: "" },
-    { id: 19, name: "REGA FIRMANSYAH", role: "role", quote: "motivasi", ig: "name ig", img: "foto3rega.jpg" },
+    { id: 19, name: "REGA FIRMANSYAH", role: "role", quote: "motivasi", ig: "name ig", img: "foto19rega.jpg" },
     { id: 20, name: "REHAN PRATAMA", role: "role", quote: "motivasi", ig: "name ig", img: "" },
     { id: 21, name: "REVA APRILIA EKA PUTRI", role: "role", quote: "motivasi", ig: "name ig", img: "" },
     { id: 22, name: "RIKO SILA DWI HABIBI", role: "role", quote: "motivasi", ig: "name ig", img: "" },
-    { id: 23, name: "SAHRIL FAJAR YULIANTO", role: "role", quote: "motivasi", ig: "name ig", img: "foto2sahril.jpg" },
+    { id: 23, name: "SAHRIL FAJAR YULIANTO", role: "role", quote: "motivasi", ig: "name ig", img: "foto23sahril.jpg" },
     { id: 24, name: "SALWA LAUKFITASARI", role: "role", quote: "motivasi", ig: "name ig", img: "" },
-    { id: 25, name: "SAMUEL JASON FIRST", role: "role", quote: "motivasi", ig: "name ig", img: "" },
-    { id: 26, name: "SEKAR ARUM RATNA SARI", role: "role", quote: "motivasi", ig: "name ig", img: "foto1sam.jpg" },
+    { id: 25, name: "SAMUEL JASON FIRST", role: "role", quote: "motivasi", ig: "name ig", img: "foto25sam.jpg" },
+    { id: 26, name: "SEKAR ARUM RATNA SARI", role: "role", quote: "motivasi", ig: "name ig", img: "" },
     { id: 27, name: "SEVIYA NUR AINI", role: "role", quote: "motivasi", ig: "name ig", img: "" },
     { id: 28, name: "SYIFA'U RAHMA WATI", role: "role", quote: "motivasi", ig: "name ig", img: "" },
     { id: 29, name: "THESALONICA NONIK CRISTIHANA", role: "role", quote: "motivasi", ig: "name ig", img: "" },
@@ -59,7 +59,7 @@ function renderNodes() {
                 <span class="badge">ONLINE</span>
             </div>
             <div class="avatar-frame">
-                <img src="${photoUrl}" onerror="this.onerror=null; this.src='${fallbackImage}';" alt="${student.name}">
+                <img src="${photoUrl}" onerror="this.onerror=null; this.src='${fallbackImage}';" alt="${student.name}" onclick="openModal(this.src)">
             </div>
             <div class="card-body">
                 <h3>${student.name}</h3>
@@ -94,6 +94,23 @@ function filterNodes() {
             const text = cards[i].innerText.toLowerCase();
             cards[i].style.display = text.includes(filter) ? "" : "none";
         }
+    }
+}
+
+// Fungsi Buka dan Tutup Foto Fullscreen (Modal)
+function openModal(src) {
+    const modal = document.getElementById('imageModal');
+    const fullImg = document.getElementById('fullImg');
+    if (modal && fullImg) {
+        modal.style.display = 'flex';
+        fullImg.src = src;
+    }
+}
+
+function closeModal() {
+    const modal = document.getElementById('imageModal');
+    if (modal) {
+        modal.style.display = 'none';
     }
 }
 

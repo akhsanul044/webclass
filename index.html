@@ -34,7 +34,7 @@
                 <div class="struct-card main-lead">
                     <span class="struct-role">WALI KELAS</span>
                     <div class="avatar-frame">
-                        <img src="" onerror="this.onerror=null; this.src=fallbackImage;" alt="Wali Kelas">
+                        <img src="" onerror="this.onerror=null; this.src=fallbackImage;" alt="Wali Kelas" onclick="openModal(this.src)">
                     </div>
                     <h3>nama</h3>
                     <p class="struct-ig">name ig</p>
@@ -44,7 +44,7 @@
                     <div class="struct-card">
                         <span class="struct-role">KETUA KELAS</span>
                         <div class="avatar-frame">
-                            <img src="" onerror="this.onerror=null; this.src=fallbackImage;" alt="Ketua Kelas">
+                            <img src="" onerror="this.onerror=null; this.src=fallbackImage;" alt="Ketua Kelas" onclick="openModal(this.src)">
                         </div>
                         <h3>nama</h3>
                         <p class="struct-ig">name ig</p>
@@ -52,7 +52,7 @@
                     <div class="struct-card">
                         <span class="struct-role">WAKIL KETUA</span>
                         <div class="avatar-frame">
-                            <img src="" onerror="this.onerror=null; this.src=fallbackImage;" alt="Wakil Kelas">
+                            <img src="" onerror="this.onerror=null; this.src=fallbackImage;" alt="Wakil Kelas" onclick="openModal(this.src)">
                         </div>
                         <h3>nama</h3>
                         <p class="struct-ig">name ig</p>
@@ -63,7 +63,7 @@
                     <div class="struct-card">
                         <span class="struct-role">SEKRETARIS 1</span>
                         <div class="avatar-frame">
-                            <img src="" onerror="this.onerror=null; this.src=fallbackImage;" alt="Sekretaris 1">
+                            <img src="" onerror="this.onerror=null; this.src=fallbackImage;" alt="Sekretaris 1" onclick="openModal(this.src)">
                         </div>
                         <h3>nama</h3>
                         <p class="struct-ig">name ig</p>
@@ -71,7 +71,7 @@
                     <div class="struct-card">
                         <span class="struct-role">SEKRETARIS 2</span>
                         <div class="avatar-frame">
-                            <img src="" onerror="this.onerror=null; this.src=fallbackImage;" alt="Sekretaris 2">
+                            <img src="" onerror="this.onerror=null; this.src=fallbackImage;" alt="Sekretaris 2" onclick="openModal(this.src)">
                         </div>
                         <h3>nama</h3>
                         <p class="struct-ig">name ig</p>
@@ -82,7 +82,7 @@
                     <div class="struct-card">
                         <span class="struct-role">BENDAHARA 1</span>
                         <div class="avatar-frame">
-                            <img src="" onerror="this.onerror=null; this.src=fallbackImage;" alt="Bendahara 1">
+                            <img src="" onerror="this.onerror=null; this.src=fallbackImage;" alt="Bendahara 1" onclick="openModal(this.src)">
                         </div>
                         <h3>nama</h3>
                         <p class="struct-ig">name ig</p>
@@ -90,7 +90,7 @@
                     <div class="struct-card">
                         <span class="struct-role">BENDAHARA 2</span>
                         <div class="avatar-frame">
-                            <img src="" onerror="this.onerror=null; this.src=fallbackImage;" alt="Bendahara 2">
+                            <img src="" onerror="this.onerror=null; this.src=fallbackImage;" alt="Bendahara 2" onclick="openModal(this.src)">
                         </div>
                         <h3>nama</h3>
                         <p class="struct-ig">name ig</p>
@@ -112,6 +112,11 @@
             </div>
         </div>
     </main>
+
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <span class="close-btn">&times;</span>
+        <img class="modal-content" id="fullImg">
+    </div>
 
     <footer>
         <p>&copy; 2026 Computer & Network Engineering Class. All Connections Maintained.</p>
