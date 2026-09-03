@@ -25,7 +25,7 @@ const students = [
     { id: 20, name: "REHAN PRATAMA", role: " . ", quote: "motivasi", ig: "name ig", img: "foto20rehan.png" },
     { id: 21, name: "REVA APRILIA EKA PUTRI", role: " . ", quote: "motivasi", ig: "name ig", img: "" },
     { id: 22, name: "RIKO SILA DWI HABIBI", role: " . ", quote: "motivasi", ig: "name ig", img: "foto22riko.png" },
-    { id: 23, name: "SAHRIL FAJAR YULIANTO", role: " . ", quote: "motivasi", ig: "name ig", img: "foto23sahril.png" },
+    { id: 23, name: "SAHRIL FAJAR YULIANTO", role: " . ", quote: "motivasi", ig: "name ig", img: "foto23sahril.jpg" },
     { id: 24, name: "SALWA LAUKFITASARI", role: " . ", quote: "motivasi", ig: "name ig", img: "" },
     { id: 25, name: "SAMUEL JASON FIRST", role: " . ", quote: "motivasi", ig: "name ig", img: "foto25sam.jpg" },
     { id: 26, name: "SEKAR ARUM RATNA SARI", role: " . ", quote: "motivasi", ig: "name ig", img: "foto26arum.png" },
@@ -35,7 +35,7 @@ const students = [
     { id: 30, name: "WIDYA SARI", role: " . ", quote: "motivasi", ig: "name ig", img: "foto30widya.png" },
     { id: 31, name: "YANA WIDYA KARTIKASARI", role: " . ", quote: "motivasi", ig: "name ig", img: "foto31yana.png" },
     { id: 32, name: "YENI RAHMASARI", role: " . ", quote: "motivasi", ig: "name ig", img: "" },
-    { id: 33, name: "YULFIANA WAHYU NINGSIH", role: " . ", quote: "motivasi", ig: "name ig", img: "foto33yul.png" },
+    { id: 33, name: "YULFIANA WAHYU NINGSIH", role: " . ", quote: "motivasi", ig: "name ig", img: "foto33wahyu.png" },
     { id: 34, name: "YUNITA PUTRI PUJI PRATAMA", role: " . ", quote: "motivasi", ig: "name ig", img: "foto34yunita.png" },
     { id: 35, name: "ZAHRATUL FITRI SHOLICHAH", role: " . ", quote: "motivasi", ig: "name ig", img: "foto35fitri.png" },
     { id: 36, name: "MAS RENO DWI", role: " . ", quote: "motivasi", ig: "name ig", img: "" }
